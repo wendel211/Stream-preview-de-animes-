@@ -1,0 +1,612 @@
+:root {
+	--cor-primaria: #234230;  
+	--cor-secundaria: #fff;   
+	--cor-fundo: #000000;    
+	--cor-texto: #d82121;        
+	--cor-hover: #faf8ef;     
+    }
+    
+    html, body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+    }
+    
+    * {
+	font-family: Arial, Helvetica, sans-serif;
+	color: var(--cor-texto);
+	box-sizing: border-box;
+    }
+
+    hr {
+	display: block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: inset;
+	border-width: 1px;
+    }
+    
+    h3 {
+	color: var(--cor-fundo);
+    }
+    
+    a h3:hover {
+	color: var(--cor-hover);
+    }
+    
+    a {
+	text-decoration: none;
+    }
+    
+    a h5:admin {
+	align-items: center;
+	color : var(--cor-secundaria);
+	text-align: center;
+    }
+
+    header {
+	padding: 10px;
+	text-align: center;
+    }
+    
+ .wrapper{
+	min-width: 100%;
+	min-height: 100%;
+	background-color: #490e0e;
+}
+
+.cadastro{
+    background-color: #7e1313;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.paginaSobre{
+	padding: 10px 20px;
+	display: block;
+	align-items: left;
+	box-shadow: rgba(12, 11, 11, 0.3) 0 1px 10px;
+
+
+}
+
+.colunas{
+    background-color: #ecc4c4;
+    min-height: 600px;
+    max-height: 100%;
+    width: 600px;
+    box-shadow: rgba(12, 11, 11, 0.3) 0 1px 10px;
+    padding: 40px 35px;
+    overflow-y: auto;
+    border: #000 1px solid;
+}
+
+.colunas-admin{
+	background-color: #ecc4c4;
+	min-height: 300px;
+	max-height: 100%;
+	width: 600px;
+	box-shadow: rgba(12, 11, 11, 0.3) 0 1px 10px;
+	padding: 40px 35px;
+	overflow-y: auto;
+	border: #000 1px solid;
+	align-items: center;
+	text-align: center;
+  }
+
+.colunas form{
+	display: flex;
+	flex-direction: column;
+	padding-top: 24px;
+}
+    .colunas form input[type="text"],
+    .colunas form input[type="email"],
+    .colunas form input[type="password"] {
+	font-size: 14px;
+	margin: 10px 0;
+	border: none;
+	border-bottom: 1px solid #dedede;
+    }
+    
+    .colunas form input[type="submit"] {
+	background-color: var(--cor-primaria);
+	color: var(--cor-secundaria);
+	height: 36px;
+	width: 100px;
+	border: none;
+	border-radius: 2px;
+	font-weight: 800;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	font-size: 16px;
+    }
+    
+    .colunas .header {
+	padding: 20px 0px;
+    }
+    
+    .colunas h3 {
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 32px;
+	margin: 0;
+	padding-top: 16px;
+	color: var(--cor-texto);
+    }
+
+  div.body-content{
+  /** Essa margem vai evitar que o conteudo fique por baixo do rodapé **/
+  margin-bottom: 30px;
+  align-items: center;
+  
+}
+
+    .colunas .header span {
+	font-size: 14px;
+    }
+    
+    .colunas .header img {
+	width: 200px;
+    }
+    
+    .mensagemCadastro,
+    .mensagemEntrar,
+    .mensagemErro {
+	font-size: 14px;
+	font-weight: 400;
+	text-decoration: none;
+	color: var(--cor-texto);
+    }
+    
+    .videoPreview,
+    .imagemPreview {
+	width: 100%;
+    }
+    
+    .previewContainer {
+	position: relative;
+	display: flex;
+    }
+    
+    .previewContainer.small {
+	width: 300px;
+	height: 200px;
+	margin-right: 5px;
+	display: inline-flex;
+    }
+    
+    .previewContainer.small img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+    }
+    
+    .interfacePreview {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(14, 13, 13, 0.3);
+	position: absolute;
+    }
+    
+    .interfacePreview .detalhesPrincipais h2 {
+	color: var(--cor-secundaria);
+	font-size: 80px;
+	margin: 15px 0;
+    }
+    
+    .detalhesPrincipais h4 {
+	color: var(--cor-secundaria);
+	font-size: 30px;
+	margin: 15px 5;
+    }
+    
+    .interfacePreview .detalhesPrincipais {
+	position: relative;
+	top: 35%;
+	margin-left: 50px;
+	display: flex;
+	flex-direction: column;
+    }
+    
+    .detalhesPrincipais button {
+	background-color: rgba(139, 29, 29, 0.4);
+	color: var(--cor-secundaria);
+	border: none;
+	min-width: 150px;
+	padding: 0 38px;
+	height: 50px;
+	max-height: 50px;
+	font-size: 18px;
+	border-radius: 2px;
+	margin-bottom: 15px;
+	margin-right: 5px;
+	cursor: pointer;
+    }
+    
+    button i {
+	color: inherit;
+    }
+    
+    .detalhesPrincipais button:hover {
+	background-color: var(--cor-hover);
+	color: var(--cor-texto);
+    }
+    
+    .categoria {
+	display: flex;
+	flex-direction: column;
+	padding: 10px 0;
+    }
+    
+    .entidades,
+    .videos {
+	overflow-x: auto;
+	overflow-y: hidden;
+	white-space: nowrap;
+    }
+    
+    .previewCategorias {
+	padding: 0 50px;
+    }
+    
+    .bannerErro {
+	color: var(--cor-fundo);
+	position: absolute;
+	top: 25%;
+	width: 100%;
+	text-align: center;
+	font-size: 18px;
+    }
+    
+    .temporada {
+	display: flex;
+	flex-direction: column;
+	padding: 10px 50px;
+    }
+    
+    .episodio {
+	display: inline-flex;
+	justify-content: center;
+	margin-right: 4px;
+    }
+    
+    .episodio .conteudo {
+	display: flex;
+	flex-direction: column;
+	width: 230px;
+	position: relative;
+    }
+    
+    .episodio img {
+	width: 230px;
+	height: 129px;
+	object-fit: cover;
+    }
+    
+    .episodio .informacaoVideo h4,
+    .episodio .informacaoVideo span {
+	color: var(--cor-secundaria);
+	width: 100%;
+	white-space: normal;
+    }
+    
+    .episodio .informacaoVideo {
+	max-height: 200px;
+	overflow-y: auto;
+    }
+    
+    .previewCategorias.noScroll .categoria .entidades {
+	white-space: normal;
+    }
+    
+    .localAssistir video {
+	width: 100%;
+    }
+    
+    .controlesVideo {
+	position: absolute;
+	width: 100%;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	background-color: rgba(0,0,0,0.3);
+    }
+    
+    .controlesVideo h1 {
+	color: var(--cor-secundaria);
+    }
+    
+    .controlesVideo button {
+	font-size: 50px;
+	padding: 50px;
+	color: var(--cor-secundaria);
+	background-color: transparent;
+	border: none;
+    }
+    
+    .aSeguir {
+	height: 100%;
+	justify-content: center;
+    }
+    
+    .conteudoASeguir button {
+	padding: 0;
+    }
+    
+    .conteudoASeguir h2,
+    .conteudoASeguir h3 {
+	color: var(--cor-secundaria);
+    }
+    
+    .navegacao {
+	z-index: 2;
+    }
+    
+    .seen {
+	color: #2ecc71;
+	font-size: 26px;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+    }
+    
+    .barraTopo {
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	padding: 0 60px;
+	height: 95px;
+	box-sizing: border-box;
+	min-width: 1050px;
+	transition: background-color 200ms linear;
+    }
+    
+    .barraTopo.scrolled {
+	background-color: var(--cor-fundo);
+	transition: background-color 200ms linear;
+    }
+    
+    .conteudoLogo {
+	height: 40px;
+    }
+    
+    .conteudoLogo img {
+	height: 100%;
+    }
+    
+    .linkNaveg {
+	display: flex;
+	list-style: none;
+    }
+    
+    .linkNaveg a {
+	color: var(--cor-secundaria);
+	font-size: 18px;
+	margin-left: 20px;
+    }
+    
+    .itensDireita {
+	text-align: right;
+	flex: 1;
+    }
+    
+    .itensDireita i {
+	color: var(--cor-secundaria);
+	font-size: 20px;
+	margin-left: 10px;
+    }
+    
+    .previewCategorias h1 {
+	color: #e5e5e5;
+    }
+    
+    .caixaBusca {
+	padding: 100px 50px;
+    }
+    
+    .busca {
+	height: 50px;
+	width: 600px;
+	border: 1px solid #dedede;
+	background-color: transparent;
+	color: var(--cor-secundaria);
+	font-size: 20px;
+	padding: 5px 10px;
+	border-radius: 3px;
+    }
+    
+    .containerConfiguracoes {
+	padding-top: 60px;
+	background-color: transparent;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+    }
+    
+    .containerConfiguracoes h2 {
+	color: var(--cor-secundaria);
+	margin-top: 1px;
+    }
+    
+    .containerConfiguracoes .formSection {
+	display: flex;
+	flex-direction: column;
+	margin: 1px 0;
+	border-bottom: 1px solid #dedede;
+	padding-bottom: 10px;
+    }
+    
+    .containerConfiguracoes form input[type="text"],
+    .containerConfiguracoes form input[type="email"],
+    .containerConfiguracoes form input[type="password"] {
+	width: 300px;
+	height: 40px;
+	font-size: 15px;
+	margin: 5px 0;
+	border: none;
+	border-radius: 3px;
+	padding: 0 5px;
+    }
+    
+    .containerConfiguracoes form input[type="submit"] {
+	background-color: #dc1928;
+	width: 100px;
+	height: 40px;
+    }
+    
+    .alertaSucesso,
+    .alertaErro {
+	margin: 10px 0;
+    }
+    
+    .alertaErro {
+	color: #dc1928;
+    }
+    
+    .alertaSucesso {
+	color: #2ecc71;
+    }
+    
+    a.botaoExcluir {
+	background-color: #dc1928;
+	color: var(--cor-secundaria);
+	height: 30px;
+	width: 130px;
+	border: none;
+	border-radius: 2px;
+	font-weight: 800;
+	margin-bottom: 20px;
+	font-size: 16px;
+	appearance: push-button;
+	user-select: none;
+	white-space: pre;
+	align-items: flex-start;
+	text-align: center;
+	cursor: default;
+	box-sizing: border-box;
+	padding: 1px 6px;
+	cursor: pointer;
+    }
+    
+    .botaoCancelar {
+	background-color: #dc1928;
+	color: var(--cor-secundaria);
+	height: 35px;
+	width: 100px;
+	border: none;
+	border-radius: 2px;
+	font-weight: 800;
+	margin-top: 10px;
+	margin-bottom: auto;
+	font-size: 16px;
+	appearance: push-button;
+	user-select: none;
+	white-space: pre;
+	align-items: flex-start;
+	text-align: center;
+	cursor: default;
+	box-sizing: border-box;
+	padding: 6px 0px;
+	cursor: pointer;
+    }
+    
+
+    .box{
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+	align-items: left;
+  }
+  
+  .w-100{
+	width: 100%;
+  }
+  
+  .h-100{
+	height: 100%;
+  }
+  
+  .m-2{
+	margin: 12px;
+  }
+  
+  .p-4{
+	padding: 24px;
+  }
+  
+  #form-form{
+	& .image-upload{
+	    position: right;
+	    width: 100px;
+	    height: 100px;
+	    border: 4px solid #000;
+	    border-radius: 100%;
+	    box-shadow: 2px 3px 12px #00000060;
+	    overflow: hidden;
+	}
+  
+	& .image-upload img{
+	    object-fit: cover;
+	}
+  
+	& .image-upload i{
+	    position: absolute;
+	    margin: 0 auto;
+	    font-size: 50px;
+	    color: purple;
+	}
+  
+	& #image-field{
+	    position: absolute;
+	    margin: 0 auto;
+	    width: 100px;
+	    height: 100px;
+	    opacity: 0;
+	}
+  }
+
+  .colunas-admin {
+	max-width: 800px;
+	margin: auto;
+  }
+  
+  .header {
+	text-align: center;
+	margin-bottom: 20px;
+  }
+  
+  .lista-usuarios {
+	display: grid;
+	gap: 20px;
+  }
+  
+  .usuario-item {
+	background-color: #fff;
+	padding: 15px;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .acao-form {
+	margin-top: 10px;
+  }
+  
+  .acao-botao {
+	background-color: #dc3545;
+	color: #fff;
+	border: none;
+	padding: 8px 12px;
+	cursor: pointer;
+	border-radius: 4px;
+  }
+  
+  .acao-botao:hover {
+	background-color: #c82333;
+  }
+  
