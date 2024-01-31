@@ -3,6 +3,8 @@
 
 Este projeto foi desenvolvido como parte da disciplina de Programação Web. Trata-se da criação de um site responsivo utilizando as tecnologias PHP, JavaScript, CSS e HTML, além do XAMPP como servidor local (localhost) e um banco de dados MySQL.
 
+O projeto também possui um sistema CRUD de administração de serviços e usuários.
+
 O IFBAFLIX é um site de streaming de animes, projetado com uma interface simples e de fácil utilização, permitindo aos usuários assistir a prévias de animes catálogados. O site oferece recursos como visualização por temporadas, episódios e informações, sobre os animes cadastrados.
 
 # Tecnologias Utilizadas
